@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Sidebar from './components/Sidebar';
+import Maincontainer from './components/Maincontainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import MainApp from './MainApp'
 
-function App() {
+import Message from './pages/messages/Message'
+
+const App: React.FC = () => {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      
+      <Routes>
+        <Route path='messages' element={<Message />}/>
+        <Route index element={<div className='flex'>
+         <Sidebar  />
+         <Maincontainer />
+         </div>} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
