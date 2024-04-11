@@ -4,7 +4,6 @@ import { IoMdNotifications } from "react-icons/io";
 import { IoHomeSharp } from "react-icons/io5";
 
 
-
 const TopNav = () => {
     return (
         <div className='flex flex-col'>
@@ -21,7 +20,6 @@ const TopNav = () => {
             </div>
             <IoHomeSharp className='' />
         </div>
-
         
     )
 }
