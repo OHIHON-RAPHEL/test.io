@@ -3,6 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FiFolderMinus } from "react-icons/fi";
 import { IoCartOutline } from "react-icons/io5";
 
+
 const RecentItem = ({title} : {title: any}) => {
     return ( <div className='flex gap-3 text-[13px] text-gray-500  mb-[5px] p-[5px]'>
        <div className='w-[30px]'>
