@@ -45,7 +45,7 @@ const Sidebar = () => {
             </Link>
             <div className='flex items-center gap-3'>
               <IoSettingsOutline />
-              <h4>Settings</h4>
+              <h4>Settings just been the individual that just have to do thye things thatv is beeen beeen nedde to cover uponthe the expenses</h4>
             </div>
           </div>
 
